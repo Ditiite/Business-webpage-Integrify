@@ -1,0 +1,29 @@
+
+.container {
+    width: 80vw;
+}
+
+/****** NAVIGATOR SECTION *******/
+.navigator {
+    float: right;
+}
+
+.navigator li {
+    display: inline-block;
+}
+
+
+/*********** MAIN CONTENT SECTION **********/
+.round-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/*********** BLOG SECTION **********/
+
+/*********** MAIN TEXT SECTION **********/
+
+/*********** ASIDE SECTION **********/
+
+/*********** FOOTER SECTION **********/
