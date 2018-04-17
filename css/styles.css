@@ -34,10 +34,10 @@ h3,
 }
 
 /* Nav */
-.navigator { 
-    align-self: center;    
+.navigator {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
     width: 70%;
 }
  
@@ -64,13 +64,21 @@ h3,
 
 /*********** MAIN CONTENT SECTION **********/
 .main {
+    background: linear-gradient(to top right, #b9d1d9, #e4e8e8);
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
 }
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 .round-img {
     border: 2px groove #ced2d5;    
     border-radius: 50%;   
+    background-color: white;
     height: 150px;
     margin: 15px;
     padding: 3px;
