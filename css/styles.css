@@ -1,4 +1,8 @@
 
+body {
+    font-size: 13px;
+}
+
 .container {
     border: 1px solid silver;
     display: flex;
@@ -13,14 +17,9 @@ h1 {
 }
 
 h2,
-h3,
 .navigator li {
     color: #294f5e;
     text-transform: uppercase;
-}
-
-p {
-    font-size: 13px;
 }
 
 /****** NAVIGATOR SECTION *******/
@@ -67,7 +66,7 @@ p {
 
 /*********** MAIN CONTENT SECTION **********/
 .main {
-    padding-top: 68px;
+    padding-top: 90px;
     width: 100%;
     background: #fff;
     position: relative;
@@ -89,7 +88,7 @@ p {
     width: 68%;
     height: 185px;
     position: relative;
-    top: -40;
+    top: -60;
     z-index: 1002;
 }
 
@@ -150,9 +149,48 @@ p {
 
 
 /*********** BLOG SECTION **********/
+.blog {
+    width: 25%;
+}
+
+
 
 /*********** MAIN TEXT SECTION **********/
+.articles {
+    width: 50%;
+}
 
 /*********** ASIDE SECTION **********/
+.aside {
+    width: 25%;
+}
 
 /*********** FOOTER SECTION **********/
+.footer {
+    background-color: #f5f5f5;
+    color: #818b8d;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 900 !important;
+}
+
+.contact {
+    display: inline-flex;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact > div {
+    width: 20%;
+    text-align: center;
+}
+
+.rights {
+    width: 100%;
+    text-align: center;
+    color: #cecccc;
+}
