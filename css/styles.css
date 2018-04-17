@@ -1,7 +1,12 @@
 
 .container {
-    width: 80vw;
+    border: 1px solid silver;
+    display: flex;
+    flex-flow: column wrap;    
+    font-family: 'Montserrat', sans-serif;
     margin: 20px auto;
+    padding: 10px 20px;   
+    width: 80vw;
 }
 
 h1 {
@@ -9,29 +14,67 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+.navigator li {
     color: #294f5e;
     text-transform: uppercase;
 }
 
+
 /****** NAVIGATOR SECTION *******/
-.navigator {
-    float: right;
+/* Logo */
+.top {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
 }
 
+.logo {
+    width: 30%;
+}
+
+/* Nav */
+.navigator { 
+    align-self: center;    
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+ 
 .navigator li {
-    display: inline-block;
+    border: 2px groove #d9dcdf;
+    border-radius: 5px;
+    background: linear-gradient(#f6f6f6, #bdbcbc);
+    display: inline-flex;    
+    font-size: 15px;
+    font-weight: bold; 
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 115px; 
 }
 
+.navigator li:hover {
+    background: linear-gradient(#294f5e, #50717d);
+    color: white;
+}
+
+.navigator ul {
+    padding: 0;
+}
 
 /*********** MAIN CONTENT SECTION **********/
+.main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
 .round-img {
-    border-radius: 50%;
-    width: 150px;
+    border: 2px groove #ced2d5;    
+    border-radius: 50%;   
     height: 150px;
-    border: 2px groove #ced2d5;
-    padding: 3px;
     margin: 15px;
+    padding: 3px;
+    width: 150px;
 }
 
 /*********** BLOG SECTION **********/
