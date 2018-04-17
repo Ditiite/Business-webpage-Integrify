@@ -4,6 +4,16 @@
     margin: 20px auto;
 }
 
+h1 {
+    color: #294f5e;
+}
+
+h2,
+h3 {
+    color: #294f5e;
+    text-transform: uppercase;
+}
+
 /****** NAVIGATOR SECTION *******/
 .navigator {
     float: right;
