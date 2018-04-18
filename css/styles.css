@@ -1,18 +1,23 @@
 
 body {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .container {
     display: flex;
-    flex-flow: column wrap;    
-    font-family: 'Montserrat', sans-serif;
+    flex-flow: column wrap;
+    font-family: 'Roboto', sans-serif;
     margin: 20px auto;  
     width: 80vw;
 }
 
 h1 {
     color: #294f5e;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 25px;
 }
 
 h2,
@@ -173,10 +178,11 @@ aside {
     margin: 0 15px;
 }
 
-section > p {
+
+article > p {
+    margin-bottom: 0;
     text-align: justify;
 }
-
 /** BLOG SECTION **/
 .blog {
     display: flex;
@@ -200,6 +206,7 @@ aside > ul > li {
     display: inline-block;
     list-style-type: none;
     padding: 0;
+    font-size: 13px;
 }
 
 .article-data > li:first-child,
@@ -210,6 +217,7 @@ aside > ul > li {
 
 ul.article-data {
     padding: 0;
+    margin-top: 3px;
     color: #cfcccc;
 }
 
@@ -222,7 +230,9 @@ ul.article-data {
 
 article > img {
     float: left;
-    border: 2px groove #cfcccc;
+    border: 2px solid #cfcccc;
+    margin: 17px 20px 0 0;
+    padding: 1px;
 }
 
 /** ASIDE SECTION **/
