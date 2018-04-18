@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-    border: 1px solid silver;
     display: flex;
     flex-flow: column wrap;    
     font-family: 'Montserrat', sans-serif;
@@ -20,9 +19,16 @@ h2,
 .navigator li {
     color: #294f5e;
     text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+article > p,
+article > h2 {    
+    text-align: justify;
 }
 
 /****** NAVIGATOR SECTION *******/
+
 /* Logo */
 .top {
     display: flex;
@@ -162,13 +168,15 @@ h2,
     margin: 0 20px;
 }
 
-.blog-article > section {
-    margin: 0 10px;
+.blog-article > section,
+aside {
+    margin: 0 15px;
 }
 
 section > p {
     text-align: justify;
 }
+
 /** BLOG SECTION **/
 .blog {
     display: flex;
@@ -178,7 +186,7 @@ section > p {
 
 .blog > article,
 .articles > article,
-.aside > ul > li {
+aside > ul > li {
     border-bottom: 2px dashed #cfcccc;
 }
 
@@ -222,17 +230,26 @@ ul.article-data {
 .aside > ul {
     margin: 0;
     padding: 0;
+    text-align: justify;
+    list-style: none;
 }
 
 .aside > ul > li {
-    padding: 10px;
-    list-style-position: initial;
-    
+    padding: 16px 0 16px 16px;
+    text-indent: -14px;
 }
 
-ul > p {
-    list-style: square inside url("sqpurple.gif") !important;
-}
+.aside > ul > li::before { 
+    display: inline-block;
+      content: '';
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      margin-right: 0.5rem;
+      background-color: #cfcccc;
+    
+  }
 
 /*********** FOOTER SECTION **********/
 .footer {
