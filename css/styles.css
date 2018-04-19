@@ -209,7 +209,7 @@ article > p {
 .blog > article,
 .articles > article,
 aside > ul > li {
-    border-bottom: 2px dashed #cfcccc;
+    border-bottom: 1px dashed #cfcccc;
 }
 
 .blog > article:last-child,
