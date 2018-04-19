@@ -1,14 +1,21 @@
 
+html {
+    background-color: dimgrey;
+}
+
 body {
     font-size: 13px;
     color: #294f5e;
+    background-color: white;
 }
 
 .container {
     display: flex;
     flex-flow: column wrap;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px auto;  
+    font-family: 'Cabin', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    margin: 0 auto;  
     width: 855px;
 }
 
@@ -19,7 +26,7 @@ h1,
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 25px;
 }
 
@@ -46,11 +53,13 @@ a {
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 0 15px; 
+    padding: 0; 
 }
 
 .logo {
-    width: 30%;
+    width: 35%;
+    height: 120px;
+    margin-left: 20px;
 }
 
 /* Nav */
@@ -58,20 +67,21 @@ a {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
-    width: 70%;
+    width: 65%;
 }
  
 .navigator li {
-    border: 2px groove #d9dcdf;
+    border: 2px groove #e9eaec;
     border-radius: 5px;
-    background: linear-gradient(#f6f6f6, #bdbcbc);
-    display: inline-flex;    
-    font-size: 14px;
+    background: linear-gradient(#fdfcfc, #bdbcbc);
+    display: inline-flex;  
     font-weight: bold; 
+    font-size: 12px;
     justify-content: space-evenly;
-    padding: 3px;
-    width: 100px; 
+    padding: 3px 0;
+    width: 95px; 
     transition: all 0.7s ease-in-out;
+    box-shadow: 2px 2px 2px silver;
 }
 
 .navigator li:hover {
@@ -93,7 +103,7 @@ a {
     position: relative;
 }
 
-.main > .content {
+.content {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
@@ -102,7 +112,7 @@ a {
     z-index: 1001;
 }
 
-.main > .layer-badges {
+.layer-badges {
     display: flex;
     flex-direction: row;
     width: 68%;
@@ -113,7 +123,7 @@ a {
     z-index: 1002;
 }
 
-.main > .layer-content {
+.layer-content {
     width: 410px;
     position: relative;
     z-index: 1002;
@@ -123,11 +133,11 @@ a {
 
 .layer-content p {
     line-height: 20px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .layer-content > h1 > span {
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 .main > .layer-hero {
@@ -219,7 +229,7 @@ aside > ul > li {
     display: inline-block;
     list-style-type: none;
     padding: 0;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .article-data > li:first-child,
